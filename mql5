@@ -1,0 +1,74 @@
+mql5
+//+------------------------------------------------------------------+
+//|                            Excelsior                             |
+//|                     Developer: Forex Robot Easy Team             |
+//|                     Website: forexroboteasy.com                  |
+//+------------------------------------------------------------------+
+
+// Define the symbols to be traded
+string[] symbols = {'AUDUSD', 'EURUSD', 'GBPUSD', 'USDCAD', 'USDCHF', 'USDJPY'};
+
+// Define the neural networks
+class NeuralNetwork
+{
+    // Code to create the recurrent neural network
+    void CreateRNN()
+    {
+        // TODO: Implement the code to create the RNN
+    }
+    
+    // Code to train the neural network
+    void TrainNetwork()
+    {
+        // TODO: Implement the code to train the network
+    }
+    
+    // Code to calculate buy and sell signals based on market analysis
+    void CalculateSignals()
+    {
+        // TODO: Implement the code to calculate buy and sell signals
+    }
+}
+
+// Validate the daily signal before opening a trade
+bool ValidateSignal()
+{
+    // TODO: Implement the code to validate the daily signal
+    
+    return true; // Return true if the signal is valid, false otherwise
+}
+
+// Enable automated trading functionality
+void EnableAutomatedTrading()
+{
+    // TODO: Implement the code to enable automated trading functionality
+    
+    // Loop through each symbol and open trades if the signal is valid
+    for (int i=0; i<ArraySize(symbols); i++)
+    {
+        if (ValidateSignal())
+        {
+            // TODO: Implement the code to open trades
+        }
+    }
+}
+
+// The entry point of the program
+void OnStart()
+{
+    // Create and train the neural networks
+    NeuralNetwork buyNetwork;
+    buyNetwork.CreateRNN();
+    buyNetwork.TrainNetwork();
+    
+    NeuralNetwork sellNetwork;
+    sellNetwork.CreateRNN();
+    sellNetwork.TrainNetwork();
+    
+    // Calculate signals using the trained networks
+    buyNetwork.CalculateSignals();
+    sellNetwork.CalculateSignals();
+    
+    // Enable automated trading
+    EnableAutomatedTrading();
+}
